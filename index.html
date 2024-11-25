@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queef</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('sigphieef.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Comic Sans MS', cursive, sans-serif; /* Silly font */
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 5rem;
+            text-shadow: 2px 2px 5px black;
+            margin: 50px 0;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.5rem;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .nav a:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .content, .dynamic-page {
+            display: none;
+            margin-top: 50px;
+        }
+
+        .content.active, .dynamic-page.active {
+            display: block;
+        }
+
+        .dynamic-page {
+            color: white;
+            text-align: center;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .gallery, .grid-gallery {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        .gallery img, .grid-gallery img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid-gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .grid-gallery img {
+            max-width: 100%;
+        }
+
+        video {
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .content img {
+            max-width: 300px;
+            height: auto;
+            border: 5px solid white;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .content p {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            text-shadow: 1px 1px 3px black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Queef</h1>
+    <div class="nav">
+        <a href="#" onclick="showPage('content')">Home</a>
+        <a href="#" onclick="showPage('karma-page')">Karma</a>
+        <a href="#" onclick="showPage('olympia-page')">Olympia</a>
+        <a href="#" onclick="showPage('hellbound-page')">Hellbound</a>
+        <a href="#" onclick="showPage('lycaon-page')">Lycaon</a>
+        <a href="#" onclick="showPage('regalis-page')">Regalis</a>
+        <a href="#" onclick="showPage('muaz-page')">MUAZ</a>
+        <a href="#" onclick="showPage('imperator-page')">Imperator</a>
+        <a href="#" onclick="showPage('azi-dhaka-page')">Azi Dhaka</a>
+        <a href="#" onclick="showPage('queef-page')">Queef</a>
+    </div>
+    <div class="content active" id="content">
+        <img src="mestoned.jpeg" alt="Mestoned Image">
+        <p>by Venom</p>
+    </div>
+    <div class="dynamic-page" id="karma-page">
+        <h1>Karmaaaa</h1>
+        <div class="gallery">
+            <img src="graceeating.jpeg" alt="Yogesh Smiling">
+            <img src="gracehead.jpeg" alt="Yogesh Gay">
+            <img src="gracenoarms.jpeg" alt="Yogesh Stoned">
+        </div>
+    </div>
+    <div class="dynamic-page" id="olympia-page">
+        <h1>Olympiaaaa</h1>
+        <div class="gallery">
+            <img src="kailynontoilet.jpeg" alt="Kailyn on Toilet">
+            <img src="kailynwithbeer.jpeg" alt="Kailyn with Beer">
+            <img src="kailynwithfood.jpeg" alt="Kailyn with Food">
+        </div>
+    </div>
+    <div class="dynamic-page" id="hellbound-page">
+        <h1>Hellbound</h1>
+        <div class="gallery">
+            <img src="yogeshsmiling.jpeg" alt="Yogesh Smiling">
+            <img src="yogesh gay.jpeg" alt="Yogesh Gay">
+            <img src="yogeshstoned.jpeg" alt="Yogesh Stoned">
+        </div>
+    </div>
+    <div class="dynamic-page" id="lycaon-page">
+        <h1>Lycaon</h1>
+        <div class="gallery">
+            <img src="wafiq.jpeg" alt="Wafiq">
+            <img src="wafiqdrinking.jpeg" alt="Wafiq Drinking">
+        </div>
+    </div>
+    <div class="dynamic-page" id="regalis-page">
+        <h1>Regalis</h1>
+        <div class="gallery">
+            <img src="antonioonground.jpeg" alt="Antonio on Ground">
+            <video controls>
+                <source src="anton doing the gangnam style.MOV" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <div class="dynamic-page" id="muaz-page">
+        <h1>MUAZ</h1>
+        <div class="gallery">
+            <img src="muazwithvibrator.jpeg" alt="Muaz with Vibrator">
+            <img src="dildo.jpeg" alt="Dildo">
+            <img src="muazmario.jpeg" alt="Muaz Mario">
+        </div>
+    </div>
+    <div class="dynamic-page" id="imperator-page">
+        <h1>Imperator</h1>
+        <div class="gallery">
+            <img src="rohanhos.jpg" alt="Rohan HOS">
+            <img src="rohan.jpeg" alt="Rohan">
+        </div>
+    </div>
+    <div class="dynamic-page" id="azi-dhaka-page">
+        <h1>Azi Dhaka</h1>
+        <div class="gallery">
+            <img src="hussainasleep.jpeg" alt="Hussain Asleep">
+            <img src="hussainbend.jpeg" alt="Hussain Bend">
+            <img src="hussainforehead.jpeg" alt="Hussain Forehead">
+        </div>
+    </div>
+    <div class="dynamic-page" id="queef-page">
+        <h1>Queef</h1>
+        <div class="grid-gallery">
+            <!-- First Row -->
+            <img src="vibrage.jpeg" alt="Vibrage">
+            <img src="wafiqmoney.jpeg" alt="Wafiq Money">
+            <img src="wafiqmuaz.jpeg" alt="Wafiq Muaz">
+            <img src="trips.jpeg" alt="Trips">
+            <!-- Second Row -->
+            <img src="twins.jpeg" alt="Twins">
+            <img src="egg.jpeg" alt="Egg">
+            <img src="bacon.jpeg" alt="Bacon">
+            <img src="love.jpeg" alt="Love">
+            <!-- Third Row -->
+            <img src="gracebeauty.jpeg" alt="Grace Beauty">
+            <img src="crumbl.jpeg" alt="Crumbl">
+            <img src="ab.jpeg" alt="AB">
+        </div>
+    </div>
+    <script>
+        function showPage(pageId) {
+            // Hide all sections
+            document.querySelectorAll('.content, .dynamic-page').forEach((section) => {
+                section.classList.remove('active');
+            });
+            // Show the selected section
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
